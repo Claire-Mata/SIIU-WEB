@@ -1,0 +1,100 @@
+<<<<<<< HEAD
+ERROR - 2024-03-14 13:19:50 --> mysqli_sql_exception: Can't create database 'adminci4'; database exists in C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE DATABASE...', 0)
+#1 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE DATABASE...')
+#2 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE DATABASE...')
+#3 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\Forge.php(230): CodeIgniter\Database\BaseConnection->query('CREATE DATABASE...')
+#4 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Commands\Database\CreateDatabase.php(137): CodeIgniter\Database\Forge->createDatabase('adminci4')
+#5 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\CreateDatabase->run(Array)
+#6 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:create', Array)
+#7 C:\xampp\htdocs\SIIU-WEB\spark(97): CodeIgniter\CLI\Console->run()
+#8 {main}
+ERROR - 2024-03-14 13:20:05 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\SIIU-WEB\app\Database\Seeds\UserRole.php(15): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\UserRole->run()
+#6 C:\xampp\htdocs\SIIU-WEB\app\Database\Seeds\Users.php(22): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#7 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\Seeder.php(146): App\Database\Seeds\Users->run()
+#8 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#9 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#10 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#11 C:\xampp\htdocs\SIIU-WEB\spark(97): CodeIgniter\CLI\Console->run()
+#12 {main}
+CRITICAL - 2024-03-14 13:32:38 --> str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated
+in APPPATH\Views\developers\crudGenerator.php on line 98.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated', 'C:\\xampp\\htdocs\\SIIU-WEB\\app\\Views\\developers\\crudGenerator.php', 98)
+ 2 APPPATH\Views\developers\crudGenerator.php(98): str_replace('_', ' ', null)
+ 3 SYSTEMPATH\View\View.php(213): include('C:\\xampp\\htdocs\\SIIU-WEB\\app\\Views\\developers\\crudGenerator.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('developers/crudGenerator', [], true)
+ 6 APPPATH\Controllers\Developers\CRUDGenerator.php(50): view('developers/crudGenerator', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Developers\CRUDGenerator->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Developers\CRUDGenerator))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SIIU-WEB\\public\\index.php')
+=======
+ERROR - 2024-03-14 14:20:19 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'adminci4' in C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'adminci4', 3306, '', 0)
+#1 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Handlers\DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#3 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('sessions', 'ci_session')
+#4 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Session.php(928): session_start()
+#5 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+#6 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\Services.php(674): CodeIgniter\Session\Session->start()
+#7 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#8 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#9 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#10 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+#11 C:\xampp\htdocs\SIIU-WEB\app\Controllers\BaseController.php(58): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#12 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#13 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+#14 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#15 C:\xampp\htdocs\SIIU-WEB\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#16 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#17 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'adminci4' in C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Handlers\DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+#2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('sessions', 'ci_session')
+#3 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Session.php(928): session_start()
+#4 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+#5 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\Services.php(674): CodeIgniter\Session\Session->start()
+#6 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#7 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#8 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#9 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+#10 C:\xampp\htdocs\SIIU-WEB\app\Controllers\BaseController.php(58): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#12 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+#13 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\SIIU-WEB\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\SIIU-WEB\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+CRITICAL - 2024-03-14 14:20:19 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'adminci4'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(109): CodeIgniter\Database\BaseConnection->initialize()
+ 2 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->open('sessions', 'ci_session')
+ 3 SYSTEMPATH\Session\Session.php(928): session_start()
+ 4 SYSTEMPATH\Session\Session.php(250): CodeIgniter\Session\Session->startSession()
+ 5 SYSTEMPATH\Config\Services.php(674): CodeIgniter\Session\Session->start()
+ 6 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 7 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 8 SYSTEMPATH\Config\Services.php(641): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 9 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::session()
+10 APPPATH\Controllers\BaseController.php(58): CodeIgniter\Config\BaseService::__callStatic('session', [])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+12 SYSTEMPATH\CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\SIIU-WEB\\public\\index.php')
+>>>>>>> dev
